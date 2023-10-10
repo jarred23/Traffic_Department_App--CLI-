@@ -1,0 +1,8 @@
+License Plate: CF JAMES
+Vehicle Class: Bike
+Offenses:
+Offense 1: Speeding Violation, Fine: 1500
+Offense 2: Have run a stop sign or red light, Fine: 1000
+Offense 3: , Fine: 2000
+Offense 4: , Fine: 2000
+Total Fine: 6500
