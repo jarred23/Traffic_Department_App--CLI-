@@ -1,0 +1,11 @@
+License Plate: JAMES
+Vehicle Class: car
+Offenses:
+Offense 1: Speeding Violation, Fine: 1500
+Offense 2: Have run a Red Light, Fine: 1000
+Offense 3: Have run a Stop Sign, Fine: 1000
+Offense 4: Driving under the Influence, Fine: 2000
+Offense 5: Using cellphone while driving, Fine: 1500
+Offense 6: Vehicle is louder as normal (Modified Exhaust), Fine: 1750
+Offense 7: Vehicle defects, Fine: 120
+Total Fine: 8870

@@ -1,4 +1,5 @@
 from Traffic_Officer import load_traffic_officers
+from Users import *
 from os import system
 system("clear")
 print("Please enter 1 if you are a Traffic Officer")
@@ -25,7 +26,17 @@ if answer == 1:
         print("No matching officer found. Please check your badge number and password.")
     
 elif answer == 2:
-    print("user")
+    system("clear")
+    if __name__ == "__main__":
+        while True:
+            license_plate = input("Enter a license plate number (or 'exit' to quit): ")
+            if license_plate.lower() == 'exit':
+                break
+            else:
+                result = get_data_for_license_plate(license_plate)
+                print(result)
+                print("\nPLEASE GET THIS SORTED OUT BY YOUR CLOSETEST TRAFFIC DEPARTMENT!")
+
 else:
     
     print("Please enter the correct number!")

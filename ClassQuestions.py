@@ -20,73 +20,47 @@ class Class_Questions:
 
     def bike(self, license_plate):
         global_func(self)
-        
-        self.save_to_file(license_plate, "Bike")
+        A = input("Is your motorcycle equipped with all the required safety equipment, including mirrors, lights, and turn signals? (yes|no): ")
+        if A.lower() == "no":
+            offense = "Motorcycle not equipped with all the required safety requirements"
+            fine = 1500
+            self.offensesList(offense, fine)
+        B = input("Are your tires in good condition, with sufficient tread and proper inflation? (yes|no): ")
+        if B.lower() == "yes":
+            offense = "Motorcycle tired not in good condition"
+            fine = 500
+            self.offensesList(offense, fine)
+            self.save_to_file(license_plate, "Bike")
 
     def car(self, license_plate):
         global_func(self)
-        A = input("")
-        if A.lower() == "yes":
-            offense = ""
-            fine = 2000
-            self.offensesList(offense, fine)
-        B = input("")
-        if B.lower() == "yes":
-            offense = ""
-            fine = 2000
-            self.offensesList(offense, fine)
-        C = input("")
-        if C.lower() == "yes":
-            offense = ""
-            fine = 2000
-            self.offensesList(offense, fine)
-        D = input("")
-        if D.lower() == "yes":
-            offense = ""
-            fine = 2000
-            self.offensesList(offense, fine)
         self.save_to_file(license_plate, "car")
 
     def bakkie(self, license_plate):
         global_func(self)
-        A = input("")
+        A = input("Is the vehicle overloaded (yes|no): ")
         if A.lower() == "yes":
-            offense = ""
-            fine = 2000
-            self.offensesList(offense, fine)
-        B = input("")
-        if B.lower() == "yes":
-            offense = ""
-            fine = 2000
-            self.offensesList(offense, fine)
-        C = input("")
-        if C.lower() == "yes":
-            offense = ""
-            fine = 2000
-            self.offensesList(offense, fine)
-        D = input("")
-        if D.lower() == "yes":
-            offense = ""
-            fine = 2000
+            offense = "Vehicle overloaded"
+            fine = 2170
             self.offensesList(offense, fine)
         self.save_to_file(license_plate, "Bakkie")
 
     def truck(self, license_plate):
         global_func(self)
-        A = input("Does the license of the driver have the right license for this vehicle? (Yes/No): ")
+        A = input("Is the vehicle overloaded (yes|no): ")
         if A.lower() == "yes":
-            offense = "Not having the right license for this vehicle"
-            fine = 1500
+            offense = "Vehicle overloaded"
+            fine = 3000
             self.offensesList(offense, fine)
-        B = input("Is the vehicle overloaded? (Yes/No): ")
-        if B.lower() == "yes":
-            offense = "Vehicle is overloaded"
-            fine = 2000
+        B = input("Has the driver checked the vehicle for any mechanical defects or safety issues today? (Yes/No): ")
+        if B.lower() == "no":
+            offense = "Drive failed to do daily inspection"
+            fine = 1000
             self.offensesList(offense, fine)
-        C = input("")
-        if C.lower() == "yes":
-            offense = ""
-            fine = 2000
+        C = input("Do you have all the necessary safety equipment, such as reflective vests, warning triangles, and fire extinguishers? (yes|no)")
+        if C.lower() == "no":
+            offense = "Driver does not have all the necessary safety equipment"
+            fine = 780
             self.offensesList(offense, fine)
         self.save_to_file(license_plate, "Truck")
 
@@ -131,60 +105,65 @@ class Class_Questions:
 
 
 def global_func(self):
-    A = input("Does the driver of the vehicle have the right licence for the vehicle? (Yes/No): ")
+    A = input("Does the driver of the vehicle have the right license for the vehicle? (Yes/No): ")
     if A.lower() == "no":
-        offense = "Driver does not have the right licence for the vehicle class"
+        offense = "Driver does not have the right license for the vehicle class"
         fine = 1500
         self.offensesList(offense, fine)
-    B = input("Was He / She Speeding: (yes|no) ")
+    B = input("Was He / She Speeding (yes|no): ")
     if B.lower() == "yes":
         offense = "Speeding Violation"
         fine = 1500
         self.offensesList(offense, fine)
-    C = input("Did He / She Run a red light: (yes|no) ")
+    C = input("Did He / She Run a red light (yes|no): ")
     if C.lower() == "yes":
         offense = "Have run a Red Light"
         fine = 1000
         self.offensesList(offense, fine)
-    D = input("Did He / She Run a stop sign: (yes|no) ")
+    D = input("Did He / She Run a stop sign (yes|no): ")
     if D.lower() == "yes":
         offense = "Have run a Stop Sign"
         fine = 1000
         self.offensesList(offense, fine)
-    E = input("Did He / She drive recklessly: (yes|no) ")
+    E = input("Did He / She drive recklessly (yes|no): ")
     if E.lower() == "yes":
         offense = "Driving recklessly"
         fine = 3250
         self.offensesList(offense, fine)
-    F = input("Was He / She driving under the Influnce?: (yes|no) ")
+    F = input("Was He / She driving under the Influence? (yes|no): ")
     if F.lower() == "yes":
-        offense = "Driving under the Influnce"
+        offense = "Driving under the Influence"
         fine = 2000
         self.offensesList(offense, fine)
-    G = input("Was He / She using there cellphone while driving : (yes|no) ")
+    G = input("Was He / She using there cellphone while driving (yes|no): ")
     if G.lower() == "yes":
         offense = "Using cellphone while driving"
         fine = 1500
         self.offensesList(offense, fine)
-    H = input("Was He / She driving with out insurence or regastered vehicle?: (yes|no) ")
+    H = input("Was He / She driving with out insurance or registered vehicle? (yes|no): ")
     if H.lower() == "yes":
-        offense = "Driving without Insurance or Registared vehicle"
+        offense = "Driving without Insurance or Registered vehicle"
         fine = 5000
         self.offensesList(offense, fine)
-    I = input("Is He / She vehicle louder as normal?: (yes|no) ")
+    I = input("Is He / She vehicle louder as normal? (yes|no): ")
     if I.lower() == "yes":
-        offense = "Vehicle is louder as normal (Modifid Exhause)"
+        offense = "Vehicle is louder as normal (Modified Exhaust)"
         fine = 1750
         self.offensesList(offense, fine)
-    J = input("Was He / She parked illigaly: (yes|no) ")
+    J = input("Was He / She parked illegally (yes|no): ")
     if J.lower() == "yes":
-        offense = "Driver Parked Illigaly"
+        offense = "Driver Parked Illegally"
         fine = 1000
         self.offensesList(offense, fine)
-    K = input("Is the vehicle defected in anyway?: (yes|no) ")
+    K = input("Is the vehicle defected in anyway? (yes|no): ")
     if K.lower() == "yes":
         offense = "Vehicle defects"
         fine = 120
+        self.offensesList(offense, fine)
+    L = input("Was He / She Wearing a seatbelt (yes|no): ")
+    if L.lower() == "yes":
+        offense = "Vehicle defects"
+        fine = 400
         self.offensesList(offense, fine)
     
    

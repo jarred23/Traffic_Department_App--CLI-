@@ -1,0 +1,15 @@
+License Plate: CF JARRED
+Vehicle Class: Bike
+Offenses:
+Offense 1: Speeding Violation, Fine: 1500
+Offense 2: Have run a Red Light, Fine: 1000
+Offense 3: Have run a Stop Sign, Fine: 1000
+Offense 4: Driving recklessly, Fine: 3250
+Offense 5: Using cellphone while driving, Fine: 1500
+Offense 6: Driving without Insurance or Registered vehicle, Fine: 5000
+Offense 7: Vehicle is louder as normal (Modified Exhaust), Fine: 1750
+Offense 8: Driver Parked Illegally, Fine: 1000
+Offense 9: Vehicle defects, Fine: 120
+Offense 10: Vehicle defects, Fine: 400
+Offense 11: Motorcycle tired not in good condition, Fine: 500
+Total Fine: 17020
